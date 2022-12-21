@@ -1,9 +1,27 @@
 <script>
-	import { Alert } from 'flowbite-svelte';
+	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax';
+
+	import SecondSection from './homeSecondSection.svelte';
+	import FirstSection from './homeFirstSection.svelte';
+
+	let opacityValue = 150;
+	let opacityRate;
+	const blurBackground = (progress) => {
+		const p = progress;
+		opacityRate = `opacity(${opacityValue * p}%)`;
+	};
 </script>
 
-<div class="p-8">
-	<Alert>
-		<span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
-	</Alert>
-</div>
+<Parallax config={{ stiffness: 1, damping: 1 }} threshold={{ top: 0, bottom: 0 }} sections={4}>
+	<StickyLayer rate={-0.4}>
+		<div class="mt-8">
+			<FirstSection />
+		</div>
+	</StickyLayer>
+	<StickyLayer onProgress={blurBackground} rate={1}>
+		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-800" />
+	</StickyLayer>
+	<ParallaxLayer rate={1} offset={1}>
+		<SecondSection />
+	</ParallaxLayer>
+</Parallax>
