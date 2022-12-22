@@ -1,6 +1,5 @@
 <script>
 	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax';
-
 	import SecondSection from './homeSecondSection.svelte';
 	import FirstSection from './homeFirstSection.svelte';
 
@@ -13,11 +12,11 @@
 </script>
 
 <Parallax config={{ stiffness: 1, damping: 1 }} threshold={{ top: 0, bottom: 0 }} sections={4}>
-	<ParallaxLayer rate={-2}>
-		<div class="mt-8">
+	<StickyLayer rate={0}>
+		<div class="bg-white mt-0">
 			<FirstSection />
 		</div>
-	</ParallaxLayer>
+	</StickyLayer>
 	<StickyLayer onProgress={blurBackground} rate={1}>
 		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-900" />
 	</StickyLayer>

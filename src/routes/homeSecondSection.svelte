@@ -100,90 +100,101 @@
 </div>
 
 <!-- Buy call to action -->
-<div class="bg-cyan-800 px-3 flex justify-center gap-3">
-	<Card padding="none">
-		<a href="/store">
-			<img class="rounded-t-lg" src={img1} alt="product 1" />
-		</a>
-		<div class="px-5">
+<div class="bg-gradient-to-b from-cyan-900 to-white">
+	<div class="px-3 py-6 flex justify-center gap-3">
+		<Card padding="none">
 			<a href="/store">
-				<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
-					1,200 Square foot two story home. Modern interior with architectural details on the
-					exterior.
-				</h5>
+				<img class="rounded-t-lg" src={img1} alt="product 1" />
 			</a>
-			<div class="py-2 flex justify-between items-center">
-				<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
-				<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+			<div class="px-5">
+				<a href="/store">
+					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
+						1,200 Square foot two story home. Modern interior with architectural details on the
+						exterior.
+					</h5>
+				</a>
+				<div class="py-2 flex justify-between items-center">
+					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
+					<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+				</div>
 			</div>
-		</div>
-	</Card>
-	<Card padding="none">
-		<a href="/store">
-			<img class="rounded-t-lg" src={img1} alt="product 1" />
-		</a>
-		<div class="px-5">
+		</Card>
+		<Card padding="none">
 			<a href="/store">
-				<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
-					1,200 Square foot two story home. Modern interior with architectural details on the
-					exterior.
-				</h5>
+				<img class="rounded-t-lg" src={img1} alt="product 1" />
 			</a>
-			<div class="py-2 flex justify-between items-center">
-				<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
-				<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+			<div class="px-5">
+				<a href="/store">
+					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
+						1,200 Square foot two story home. Modern interior with architectural details on the
+						exterior.
+					</h5>
+				</a>
+				<div class="py-2 flex justify-between items-center">
+					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
+					<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+				</div>
 			</div>
-		</div>
-	</Card>
-	<Card padding="none">
-		<a href="/store">
-			<img class="rounded-t-lg" src={img1} alt="product 1" />
-		</a>
-		<div class="px-5">
+		</Card>
+		<Card padding="none">
 			<a href="/store">
-				<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
-					1,200 Square foot two story home. Modern interior with architectural details on the
-					exterior.
-				</h5>
+				<img class="rounded-t-lg" src={img1} alt="product 1" />
 			</a>
-			<div class="py-2 flex justify-between items-center">
-				<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
-				<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+			<div class="px-5">
+				<a href="/store">
+					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
+						1,200 Square foot two story home. Modern interior with architectural details on the
+						exterior.
+					</h5>
+				</a>
+				<div class="py-2 flex justify-between items-center">
+					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
+					<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+				</div>
 			</div>
-		</div>
-	</Card>
-</div>
+		</Card>
+	</div>
 
-<!-- Contact form using flowbite -->
-<form class="my-20 px-20">
-	<Textarea
-		class="mb-4"
-		placeholder="Your scope of work, lot size, if you are working with a contractor, etc..."
-		rows="5"
+	<!-- Other contact form -->
+	<form
+		class="bg-gradient-to-t from-cyan-900 to-transparent p-10 flex flex-col items-center gap-3 w-2/3 mx-auto shadow-xl"
 	>
-		<div slot="header">
-			<Label class="space-y-2">
-				<Input type="email" placeholder="your-email@example.com" size="lg" class="">
-					<svg
-						slot="left"
-						aria-hidden="true"
-						class="w-6 h-6"
-						fill="currentColor"
-						viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg"
-						><path
-							d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-						/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg
-					>
-				</Input>
-			</Label>
+		<div class="placeholder">
+			<div class="text-2xl text-white text-center">Want to work together?</div>
+			<div class="text-xl text-white text-center">Fill out this form to get started.</div>
 		</div>
-		<div slot="footer" class="flex items-center justify-between">
-			<Button shadow="cyan" gradient color="cyan">Send</Button>
-			<p class="ml-auto text-xs text-gray-500 dark:text-gray-400">
-				You can unsubscribe from emails at any time, and we will never pass your email to third
-				parties.
-			</p>
-		</div>
-	</Textarea>
-</form>
+		<Input type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
+		<Input
+			type="text"
+			placeholder="Project Address"
+			size="md"
+			class="bg-white hover:border-orange-500"
+		/>
+		<Input
+			type="email"
+			placeholder="email@example.com"
+			size="md"
+			class="bg-white hover:border-orange-500"
+		>
+			<svg
+				slot="left"
+				aria-hidden="true"
+				class="w-6 h-6"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+				><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path
+					d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+				/></svg
+			>
+		</Input>
+		<Textarea
+			class="bg-white hover:border-orange-500"
+			id="textarea-id"
+			placeholder="Your scope of work, lot size, if you are working with a contractor, etc..."
+			rows="5"
+			name="message"
+		/>
+		<Button shadow="cyan" gradient color="cyan" class="w-1/5">Send</Button>
+	</form>
+</div>
