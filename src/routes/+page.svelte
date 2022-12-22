@@ -13,13 +13,13 @@
 </script>
 
 <Parallax config={{ stiffness: 1, damping: 1 }} threshold={{ top: 0, bottom: 0 }} sections={4}>
-	<StickyLayer rate={-0.4}>
+	<ParallaxLayer rate={-2}>
 		<div class="mt-8">
 			<FirstSection />
 		</div>
-	</StickyLayer>
+	</ParallaxLayer>
 	<StickyLayer onProgress={blurBackground} rate={1}>
-		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-800" />
+		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-900" />
 	</StickyLayer>
 	<ParallaxLayer rate={1} offset={1}>
 		<SecondSection />
