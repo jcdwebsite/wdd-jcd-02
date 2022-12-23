@@ -9,7 +9,6 @@
 		DropdownItem,
 		Chevron
 	} from 'flowbite-svelte';
-	import logo from '$lib/graphics/logowithoutcircle.svg';
 </script>
 
 <Navbar let:hidden let:toggle navDivClass="sm:flex sm:justify-center sm:mx-auto">

@@ -17,7 +17,7 @@
 			<FirstSection />
 		</div>
 	</StickyLayer>
-	<StickyLayer onProgress={blurBackground} offset={{ top: 0, bottom: 0 }} rate={1}>
+	<StickyLayer onProgress={blurBackground} offset={{ top: 0, bottom: 1 }} rate={1}>
 		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-900" />
 	</StickyLayer>
 	<ParallaxLayer rate={1} offset={1}>

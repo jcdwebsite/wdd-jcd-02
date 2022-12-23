@@ -38,7 +38,7 @@
 </div>
 
 <!-- Description of Cruz Designs -->
-<div class="px-3 mt-20 grid grid-cols-6">
+<div class="px-3 pt-4 mt-20 grid grid-cols-6">
 	<div class="col-span-2 text-xl text-orange-400 font-semibold underline underline-offset-8">
 		What is Cruz Designs?
 	</div>
@@ -99,19 +99,19 @@
 <!-- Buy call to action -->
 <div class="bg-gradient-to-b from-cyan-900 to-white">
 	<div class="px-3 py-6 flex justify-center gap-3">
-		<Card padding="none">
+		<Card padding="none" color={'none'} border={false}>
 			<a href="/store">
 				<img class="rounded-t-lg" src={img1} alt="product 1" />
 			</a>
 			<div class="px-5">
 				<a href="/store">
-					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
+					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-200 dark:text-white">
 						1,200 Square foot two story home. Modern interior with architectural details on the
 						exterior.
 					</h5>
 				</a>
 				<div class="py-2 flex justify-between items-center">
-					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
+					<span class="text-3xl font-bold text-cyan-200 dark:text-white">$500</span>
 					<Button
 						size="md"
 						class="bg-gradient-to-tl from-orange-200 to-orange-600 
@@ -122,19 +122,19 @@
 				</div>
 			</div>
 		</Card>
-		<Card padding="none">
+		<Card padding="none" color={'none'} border={false}>
 			<a href="/store">
 				<img class="rounded-t-lg" src={img1} alt="product 1" />
 			</a>
 			<div class="px-5">
 				<a href="/store">
-					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
+					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-200 dark:text-white">
 						1,200 Square foot two story home. Modern interior with architectural details on the
 						exterior.
 					</h5>
 				</a>
 				<div class="py-2 flex justify-between items-center">
-					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
+					<span class="text-3xl font-bold text-cyan-200 dark:text-white">$500</span>
 					<Button
 						size="md"
 						class="bg-gradient-to-tl from-orange-200 to-orange-600 
@@ -145,19 +145,19 @@
 				</div>
 			</div>
 		</Card>
-		<Card padding="none">
+		<Card padding="none" color={'none'} border={false}>
 			<a href="/store">
 				<img class="rounded-t-lg" src={img1} alt="product 1" />
 			</a>
 			<div class="px-5">
 				<a href="/store">
-					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-600 dark:text-white">
+					<h5 class="py-2 text-xl font-semibold tracking-tight text-cyan-200 dark:text-white">
 						1,200 Square foot two story home. Modern interior with architectural details on the
 						exterior.
 					</h5>
 				</a>
 				<div class="py-2 flex justify-between items-center">
-					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
+					<span class="text-3xl font-bold text-cyan-200 dark:text-white">$500</span>
 					<Button
 						size="md"
 						class="bg-gradient-to-tl from-orange-200 to-orange-600 
@@ -171,10 +171,8 @@
 	</div>
 
 	<!-- Other contact form -->
-	<form
-		class="bg-gradient-to-t from-cyan-900 to-transparent p-10 flex flex-col items-center gap-3 w-2/3 mx-auto shadow-xl"
-	>
-		<div class="placeholder">
+	<form class="bg-transparent p-10 mt-60 flex flex-col items-center gap-3 w-2/3 mx-auto shadow-xl">
+		<div class="placeholder pb-6">
 			<div class="text-2xl text-white text-center">Want to work together?</div>
 			<div class="text-xl text-white text-center">Fill out this form to get started.</div>
 		</div>
@@ -219,9 +217,3 @@
 		</Button>
 	</form>
 </div>
-
-<style>
-	.bg-svg {
-		background-image: url('../lib/graphics/patternGraphic.svg');
-	}
-</style>
