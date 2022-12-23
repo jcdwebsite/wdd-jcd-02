@@ -39,11 +39,10 @@
 		rows="5"
 		name="message"
 	/>
-	<Button
-		size="md"
-		class="bg-gradient-to-tl from-orange-200 to-orange-600 
-hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+	<button
+		method="post"
+		class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
 	>
-		<div class="text-md text-cyan-800">Send</div>
-	</Button>
+		Send
+	</button>
 </form>

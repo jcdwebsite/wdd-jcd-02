@@ -23,7 +23,7 @@
 				transition:fly={{ y: -400, duration: 3000 }}
 				class="mb-10 text-xl md:text-2xl text-bold text-center text-orange-400"
 			>
-				Architectural Designs
+				Cruz Designs
 			</h1>
 			<div class="block sm:flex sm:justify-evenly mb-10">
 				<h1 transition:fly={{ y: -400, duration: 2000 }} class="text-lg md:text-xl text-cyan-500">

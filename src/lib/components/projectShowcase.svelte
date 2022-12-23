@@ -1,6 +1,4 @@
 <script>
-	import { Button } from 'flowbite-svelte';
-
 	import img2 from '$lib/images/TrussFinish01.jpg';
 </script>
 
@@ -17,13 +15,12 @@
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, explicabo itaque voluptatem
 			nostrum neque quod harum laboriosam.
 		</div>
-		<Button
-			size="lg"
-			class="bg-gradient-to-tl from-orange-200 to-orange-600 
-			hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+		<a
+			href="/work"
+			class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
 		>
-			<div class="text-xl">Find out more</div>
-		</Button>
+			Find out more
+		</a>
 	</div>
 </div>
 
@@ -37,13 +34,12 @@
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, explicabo itaque voluptatem
 			nostrum neque quod harum laboriosam.
 		</div>
-		<Button
-			size="lg"
-			class="bg-gradient-to-tl from-orange-200 to-orange-600 
-			hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+		<a
+			href="/work"
+			class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
 		>
-			<div class="text-xl">Find out more</div>
-		</Button>
+			Find out more
+		</a>
 	</div>
 	<div class="col-span-1 imgContainer">
 		<img class="md:w-full" alt="work profile" src={img2} />
