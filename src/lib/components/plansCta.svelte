@@ -23,7 +23,7 @@
 					class="bg-gradient-to-tl from-orange-200 to-orange-600 
                 hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
 				>
-					<div class="text-md text-cyan-800">Buy the plans</div>
+					<div class="text-md text-cyan-100">Buy the plans</div>
 				</Button>
 			</div>
 		</div>
@@ -46,7 +46,7 @@
 					class="bg-gradient-to-tl from-orange-200 to-orange-600 
                 hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
 				>
-					<div class="text-md text-cyan-800">Buy the plans</div>
+					<div class="text-md text-cyan-100">Buy the plans</div>
 				</Button>
 			</div>
 		</div>
@@ -69,7 +69,7 @@
 					class="bg-gradient-to-tl from-orange-200 to-orange-600 
                 hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
 				>
-					<div class="text-md text-cyan-800">Buy the plans</div>
+					<div class="text-md text-cyan-100">Buy the plans</div>
 				</Button>
 			</div>
 		</div>
