@@ -21,7 +21,7 @@
 			/>
 			<h1
 				transition:fly={{ y: -400, duration: 3000 }}
-				class="mb-10 text-xl md:text-2xl text-bold text-center text-orange-500"
+				class="mb-10 text-xl md:text-2xl text-bold text-center text-orange-400"
 			>
 				Architectural Designs
 			</h1>

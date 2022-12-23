@@ -39,7 +39,7 @@
 
 <!-- Description of Cruz Designs -->
 <div class="px-3 mt-20 grid grid-cols-6">
-	<div class="col-span-2 text-xl text-orange-500 font-semibold underline underline-offset-8">
+	<div class="col-span-2 text-xl text-orange-400 font-semibold underline underline-offset-8">
 		What is Cruz Designs?
 	</div>
 	<div class="col-span-4 text-4xl text-cyan-300">
@@ -54,7 +54,7 @@
 	<div class="col-span-1 imgContainer">
 		<img class="md:h-full bg-cover" alt="work profile" src={img2} />
 	</div>
-	<div class="col-span-1 mt-4 container text-left px-3 sm:ml-10 xl:w-1/2">
+	<div class="col-span-1 mt-4text-left px-3 sm:ml-10 xl:w-1/2">
 		<div class="text-xl mb-2 lg:text-2xl text-cyan-600">Project Name</div>
 		<div class="text-cyan-400 text-2xl mb-2 lg:text-3xl lg:mb-5">
 			This project was unique because of these reasons:
@@ -63,38 +63,35 @@
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, explicabo itaque voluptatem
 			nostrum neque quod harum laboriosam.
 		</div>
-		<Button size="lg" gradient color="cyan">
+		<Button
+			size="lg"
+			class="bg-gradient-to-tl from-orange-200 to-orange-600 
+			hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+		>
 			<div class="text-xl">Find out more</div>
 		</Button>
-		<!-- <div
-			class="text-2xl sm:w-1/2 lg:text-3xl md:w-3/4 text-center text-cyan-800 bg-cyan-300
-		 rounded-xl hover:text-cyan-300 hover:bg-cyan-900
-		cursor-pointer xl:w-1/2"
-		>
-			<a href="/blog">Find out more</a>
-		</div> -->
 	</div>
 </div>
 
-<div class="bg-cyan-900 block py-60 md:flex xl:gap-60 md:items-center md:justify-between md:py-40">
-	<div class="container text-left px-3 sm:ml-10 xl:w-1/2">
-		<div class="text-xl mb-2 lg:text-2xl text-orange-500">Project Name</div>
-		<div class="text-cyan-500 text-2xl mb-2 lg:text-3xl lg:mb-5">
+<div class="bg-cyan-900 block py-60 md:grid md:grid-cols-2">
+	<div class="col-span-1 mt-4text-left px-3 sm:ml-10 xl:w-1/2">
+		<div class="text-xl mb-2 lg:text-2xl text-cyan-600">Project Name</div>
+		<div class="text-cyan-400 text-2xl mb-2 lg:text-3xl lg:mb-5">
 			This project was unique because of these reasons:
 		</div>
-		<div class="text-cyan-500 text-xl mb-5 lg:text-2xl lg:mb-10">
+		<div class="text-cyan-300 text-xl mb-5 lg:text-2xl lg:mb-10">
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, explicabo itaque voluptatem
 			nostrum neque quod harum laboriosam.
 		</div>
-		<div
-			class="text-2xl mb-4 sm:w-1/2 lg:text-3xl md:w-3/4 text-center text-cyan-500 
-		border border-cyan-500 rounded-xl hover:text-cyan-900 hover:bg-cyan-500
-		cursor-pointer xl:w-1/2"
+		<Button
+			size="lg"
+			class="bg-gradient-to-tl from-orange-200 to-orange-600 
+			hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
 		>
-			<a href="/blog">Find out more</a>
-		</div>
+			<div class="text-xl">Find out more</div>
+		</Button>
 	</div>
-	<div class="imgContainer">
+	<div class="col-span-1 imgContainer">
 		<img class="md:w-full" alt="work profile" src={img2} />
 	</div>
 </div>
@@ -115,7 +112,13 @@
 				</a>
 				<div class="py-2 flex justify-between items-center">
 					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
-					<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+					<Button
+						size="md"
+						class="bg-gradient-to-tl from-orange-200 to-orange-600 
+					hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+					>
+						<div class="text-md">Buy the plans</div>
+					</Button>
 				</div>
 			</div>
 		</Card>
@@ -132,7 +135,13 @@
 				</a>
 				<div class="py-2 flex justify-between items-center">
 					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
-					<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+					<Button
+						size="md"
+						class="bg-gradient-to-tl from-orange-200 to-orange-600 
+					hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+					>
+						<div class="text-md">Buy the plans</div>
+					</Button>
 				</div>
 			</div>
 		</Card>
@@ -149,7 +158,13 @@
 				</a>
 				<div class="py-2 flex justify-between items-center">
 					<span class="text-3xl font-bold text-cyan-600 dark:text-white">$500</span>
-					<Button shadow="cyan" gradient color="cyan" href="/store">Buy plans now</Button>
+					<Button
+						size="md"
+						class="bg-gradient-to-tl from-orange-200 to-orange-600 
+					hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+					>
+						<div class="text-md">Buy the plans</div>
+					</Button>
 				</div>
 			</div>
 		</Card>
@@ -195,6 +210,18 @@
 			rows="5"
 			name="message"
 		/>
-		<Button shadow="cyan" gradient color="cyan" class="w-1/5">Send</Button>
+		<Button
+			size="md"
+			class="bg-gradient-to-tl from-orange-200 to-orange-600 
+	hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+		>
+			<div class="text-md">Send</div>
+		</Button>
 	</form>
 </div>
+
+<style>
+	.bg-svg {
+		background-image: url('../lib/graphics/patternGraphic.svg');
+	}
+</style>
