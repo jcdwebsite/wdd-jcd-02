@@ -15,7 +15,7 @@
 	let price = '$500';
 </script>
 
-<div class="px-3 py-6 flex justify-center gap-3">
+<div class="px-3 pb-6 flex justify-center gap-3">
 	<Card {link} {altTitle} {image} {title} {body} {price} />
 	<Card {link} {altTitle} {image} {title} {body} {price} />
 	<Card {link} {altTitle} {image} {title} {body} {price} />

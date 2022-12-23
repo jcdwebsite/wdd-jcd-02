@@ -24,7 +24,7 @@
 	</div>
 </div>
 
-<div class="bg-cyan-900 block py-60 md:grid md:grid-cols-2">
+<div class="bg-cyan-900 block pb-60 md:grid md:grid-cols-2">
 	<div class="col-span-1 self-center text-left px-3 sm:ml-10 xl:w-1/2">
 		<div class="text-xl mb-2 lg:text-2xl text-cyan-600">Project Name</div>
 		<div class="text-cyan-400 text-2xl mb-2 lg:text-3xl lg:mb-5">
