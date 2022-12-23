@@ -1,0 +1,49 @@
+<script>
+	import { Input, Textarea, Button } from 'flowbite-svelte';
+</script>
+
+<form class="p-10 mt-40 flex flex-col items-center gap-3 w-2/3 mx-auto shadow-2xl">
+	<div class="placeholder pb-6">
+		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
+		<div class="text-xl text-cyan-400 text-center">Fill out this form to get started.</div>
+	</div>
+	<Input type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
+	<Input
+		type="text"
+		placeholder="Project Address"
+		size="md"
+		class="bg-white hover:border-orange-500"
+	/>
+	<Input
+		type="email"
+		placeholder="email@example.com"
+		size="md"
+		class="bg-white hover:border-orange-500"
+	>
+		<svg
+			slot="left"
+			aria-hidden="true"
+			class="w-6 h-6"
+			fill="currentColor"
+			viewBox="0 0 20 20"
+			xmlns="http://www.w3.org/2000/svg"
+			><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path
+				d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+			/></svg
+		>
+	</Input>
+	<Textarea
+		class="bg-white hover:border-orange-500"
+		id="textarea-id"
+		placeholder="Your scope of work, lot size, if you are working with a contractor, etc..."
+		rows="5"
+		name="message"
+	/>
+	<Button
+		size="md"
+		class="bg-gradient-to-tl from-orange-200 to-orange-600 
+hover:bg-gradient-to-tr hover:from-orange-600 hover:to-orange-200"
+	>
+		<div class="text-md text-cyan-800">Send</div>
+	</Button>
+</form>
