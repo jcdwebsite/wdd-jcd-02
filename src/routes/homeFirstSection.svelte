@@ -10,34 +10,34 @@
 	onMount(() => (visible = true));
 </script>
 
-<div class="container-none h-full w-full bg-svg ">
-	<div class="p-10 md:p-60">
-		{#if visible}
-			<img
-				transition:fly={{ y: -400, duration: 4000 }}
-				class="scale-50 md:scale-100 mx-auto"
-				src={logo}
-				alt="Jose Cruz Designs logo"
-			/>
-			<h1
-				transition:fly={{ y: -400, duration: 3000 }}
-				class="mb-10 text-xl md:text-2xl text-bold text-center text-orange-400"
-			>
-				Cruz Designs
+<div class="h-full w-screen bg-svg md:py-40">
+	<!-- <div class=""> -->
+	{#if visible}
+		<img
+			transition:fly={{ y: -400, duration: 4000 }}
+			class="scale-[0.3] sm:scale-50 lg:scale-100 mx-auto"
+			src={logo}
+			alt="Jose Cruz Designs logo"
+		/>
+		<h1
+			transition:fly={{ y: -400, duration: 3000 }}
+			class="sm:mb-10 text-lg md:text-2xl text-bold text-center text-orange-400"
+		>
+			Cruz Designs
+		</h1>
+		<div class="flex justify-evenly sm:mb-10">
+			<h1 transition:fly={{ y: -400, duration: 2000 }} class="text-sm sm:text-xl text-cyan-500">
+				Chicago
 			</h1>
-			<div class="block sm:flex sm:justify-evenly mb-10">
-				<h1 transition:fly={{ y: -400, duration: 2000 }} class="text-lg md:text-xl text-cyan-500">
-					Chicago
-				</h1>
-				<h1 transition:fly={{ y: -400, duration: 1500 }} class="text-lg md:text-xl text-cyan-500">
-					Southern California
-				</h1>
-				<h1 transition:fly={{ y: -400, duration: 1000 }} class="text-lg md:text-xl text-cyan-500">
-					Bay Area
-				</h1>
-			</div>
-		{/if}
-	</div>
+			<h1 transition:fly={{ y: -400, duration: 1500 }} class="text-sm sm:text-xl text-cyan-500">
+				Southern California
+			</h1>
+			<h1 transition:fly={{ y: -400, duration: 1000 }} class="text-sm sm:text-xl text-cyan-500">
+				Bay Area
+			</h1>
+		</div>
+	{/if}
+	<!-- </div> -->
 </div>
 
 <style>

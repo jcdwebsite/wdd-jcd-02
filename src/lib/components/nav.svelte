@@ -11,7 +11,7 @@
 	} from 'flowbite-svelte';
 </script>
 
-<Navbar let:hidden let:toggle navDivClass="sm:flex sm:justify-center sm:mx-auto">
+<Navbar let:hidden let:toggle navDivClass="md:flex md:justify-center md:mx-auto">
 	<!-- <NavBrand href="/">
 		<img src={logo} class="sm:h-16" alt="Cruz Designs Logo" />
 		<div class="text-xl text-cyan-500">Cruz Designs</div>
