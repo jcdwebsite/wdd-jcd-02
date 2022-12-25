@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-cyan-900 block py-60 md:grid md:grid-cols-2">
-	<div class="col-span-1 imgContainer">
+	<div class="my-3 md:col-span-1 imgContainer">
 		<img class="md:h-full bg-cover" alt="work profile" src={img2} />
 	</div>
 	<div class="col-span-1 self-center text-left px-3 sm:ml-10 xl:w-1/2">
@@ -41,7 +41,7 @@
 			Find out more
 		</a>
 	</div>
-	<div class="col-span-1 imgContainer">
+	<div class="my-3 md:col-span-1 imgContainer">
 		<img class="md:w-full" alt="work profile" src={img2} />
 	</div>
 </div>

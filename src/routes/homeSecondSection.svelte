@@ -19,11 +19,9 @@
 			you can buy plans for your lot.
 		</div>
 	</div>
-</div>
-<!-- Big project cards -->
-<ProjectShowcase />
-<!-- Buy call to action -->
-<div class="bg-cyan-900 pb-40">
+	<!-- Big project cards -->
+	<ProjectShowcase />
+	<!-- Buy call to action -->
 	<PlanCards />
 	<!-- Contact form -->
 	<ContactCard />

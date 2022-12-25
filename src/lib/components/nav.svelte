@@ -9,15 +9,16 @@
 		DropdownItem,
 		Chevron
 	} from 'flowbite-svelte';
+
+	import logo from '$lib/graphics/logowithoutcircle.svg';
 </script>
 
-<Navbar let:hidden let:toggle navDivClass="md:flex md:justify-center md:mx-auto">
-	<!-- <NavBrand href="/">
-		<img src={logo} class="sm:h-16" alt="Cruz Designs Logo" />
-		<div class="text-xl text-cyan-500">Cruz Designs</div>
-	</NavBrand> -->
+<Navbar let:hidden let:toggle navDivClass="mx-auto">
 	<NavHamburger on:click={toggle} />
-	<NavUl {hidden}>
+	<NavUl {hidden} ulClass="flex justify-center mx-auto items-center gap-10 py-4">
+		<NavLi href="/">
+			<img src={logo} class="sm:h-12" alt="Cruz Designs Logo" />
+		</NavLi>
 		<NavLi id="nav-menu1" class="cursor-pointer"
 			><Chevron aligned>
 				<div class="text-lg text-orange-500">More</div>
@@ -34,13 +35,13 @@
 		</NavLi>
 		<Dropdown triggeredBy="#nav-menu1" class="w-44 z-20">
 			<DropdownItem href="/blog">
-				<div class="text-lg text-orange-500">Blog</div>
+				<div class="text-lg text-orange-500 font-normal">Blog</div>
 			</DropdownItem>
 			<DropdownItem href="/about">
-				<div class="text-lg text-orange-500">About</div>
+				<div class="text-lg text-orange-500 font-normal">About</div>
 			</DropdownItem>
 			<DropdownItem href="/gallery">
-				<div class="text-lg text-orange-500">Gallery</div>
+				<div class="text-lg text-orange-500 font-normal">Gallery</div>
 			</DropdownItem>
 		</Dropdown>
 	</NavUl>
