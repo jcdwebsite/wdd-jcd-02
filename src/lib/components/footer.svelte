@@ -38,7 +38,7 @@
 	<hr class="my-6 border-orange-400 sm:mx-auto dark:border-gray-700 lg:my-8" />
 	<FooterCopyright
 		href="/"
-		by="Cruz Designs"
+		by="Jose Cruz Designs LLC"
 		spanClass="block text-sm text-cyan-500 sm:text-center dark:text-cyan-500"
 	/>
 </Footer>

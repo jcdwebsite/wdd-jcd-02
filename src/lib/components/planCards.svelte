@@ -12,31 +12,31 @@
 	let link = '/store';
 	let image = img1;
 	let altTitle = 'Test image';
-	let price = '$500';
+	let price = 500;
 
 	let screenWidth;
 
 	let images = [
 		{
-			title: 'Placeholder',
+			link: '/store',
 			src: img1,
+			title: 'Placeholder',
 			body: 'This should be taken from a fetch request to the blog excerpt',
-			tag: 'Blog',
-			date: '12 Dec 2022'
+			price: `$${price}`
 		},
 		{
-			title: 'Placeholder',
+			link: '/store',
 			src: img1,
+			title: 'Placeholder',
 			body: 'This should be taken from a fetch request to the blog excerpt',
-			tag: 'Blog',
-			date: '12 Dec 2022'
+			price: `$${price}`
 		},
 		{
-			title: 'Placeholder',
+			link: '/store',
 			src: img1,
+			title: 'Placeholder',
 			body: 'This should be taken from a fetch request to the blog excerpt',
-			tag: 'Blog',
-			date: '12 Dec 2022'
+			price: `$${price}`
 		}
 	];
 </script>

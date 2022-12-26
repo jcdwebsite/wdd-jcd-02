@@ -24,7 +24,7 @@
 			{body}
 		</p>
 		<div class="py-2 flex justify-between items-center">
-			<span class="text-3xl font-bold text-cyan-400 dark:text-white">{price}</span>
+			<span class="text-3xl font-bold text-cyan-400 dark:text-white">{`$${price}`}</span>
 			<a
 				href="/store"
 				class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
