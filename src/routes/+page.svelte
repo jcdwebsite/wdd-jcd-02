@@ -11,7 +11,7 @@
 	};
 </script>
 
-<Parallax config={{ stiffness: 1, damping: 1 }} threshold={{ top: 0, bottom: 0 }} sections={5}>
+<Parallax config={{ stiffness: 1, damping: 2 }} threshold={{ top: 0, bottom: 0 }} sections={5}>
 	<StickyLayer rate={0}>
 		<div class="bg-white mt-0">
 			<FirstSection />

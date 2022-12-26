@@ -15,9 +15,9 @@
 
 <Navbar let:hidden let:toggle navDivClass="mx-auto">
 	<NavHamburger on:click={toggle} />
-	<NavUl {hidden} ulClass="flex justify-center mx-auto items-center gap-10 py-4">
+	<NavUl {hidden} ulClass="py-4 md:flex md:justify-center md:mx-auto md:items-center md:gap-10">
 		<NavLi href="/">
-			<img src={logo} class="sm:h-12" alt="Cruz Designs Logo" />
+			<img src={logo} class="h-10 sm:h-12" alt="Cruz Designs Logo" />
 		</NavLi>
 		<NavLi id="nav-menu1" class="cursor-pointer"
 			><Chevron aligned>
