@@ -1,32 +1,33 @@
 <script>
-	import { Pagination, PaginationItem } from 'flowbite-svelte';
-	const previous = () => {
-		alert('Previous btn clicked. Make a call to your server to fetch data.');
-	};
-	const next = () => {
-		alert('Next btn clicked. Make a call to your server to fetch data.');
-	};
+	// All commented things are for pagination of the carousel
+	// import { Pagination, PaginationItem } from 'flowbite-svelte';
+	// const previous = () => {
+	// 	alert('Previous btn clicked. Make a call to your server to fetch data.');
+	// };
+	// const next = () => {
+	// 	alert('Next btn clicked. Make a call to your server to fetch data.');
+	// };
 
-	export let images;
+	export let content;
 	export const getItemId = (index) => `carousel-item${index}`;
 
-	const scrollIntoView = ({ currentTarget }) => {
-		const link = currentTarget.getAttribute('href');
-		if (!link) return;
+	// const scrollIntoView = ({ currentTarget }) => {
+	// 	const link = currentTarget.getAttribute('href');
+	// 	if (!link) return;
 
-		const scrollToElement = document.querySelector(link);
+	// 	const scrollToElement = document.querySelector(link);
 
-		if (!scrollToElement) return;
+	// 	if (!scrollToElement) return;
 
-		scrollToElement.scrollIntoView({
-			block: 'nearest',
-			behavior: 'smooth'
-		});
-	};
+	// 	scrollToElement.scrollIntoView({
+	// 		block: 'nearest',
+	// 		behavior: 'smooth'
+	// 	});
+	// };
 </script>
 
 <ul class="flex overflow-x-auto gap-3 snap-x snap-mandatory py-3 px-2">
-	{#each images as { title, src, body, tag, date }, index}
+	{#each content as { title, src, body, tag, date }, index}
 		<li id={getItemId(index)} class="py-3 shrink-0 snap-center w-4/5 shadow-xl rounded-lg">
 			<img {src} alt={title} class="rounded-t-lg" />
 			<div class="px-4">

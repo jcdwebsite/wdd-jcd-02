@@ -6,14 +6,7 @@
 	import img2 from '$lib/images/TrussFinish01.jpg';
 	import img3 from '$lib/images/TrussFinish02.jpg';
 
-	let title = 'Noteworth architectural trends';
-	let tag = 'Blog';
-	let body =
-		'Here are the biggest enterprise technology acquisitions of 2021 so far, in reversechronological order.';
-	let date = '21 Dec 2022';
-	let link = '/blog';
-
-	let images = [
+	let content = [
 		{
 			title: 'Placeholder',
 			src: img1,
@@ -42,10 +35,8 @@
 <svelte:window bind:innerWidth={screenWidth} />
 {#if screenWidth > 700}
 	<div class="px-3 flex gap-4 justify-center">
-		<Card {link} {tag} image={img1} {title} {body} {date} />
-		<Card {link} {tag} image={img2} {title} {body} {date} />
-		<Card {link} {tag} image={img3} {title} {body} {date} />
+		<Card {content} />
 	</div>
 {:else}
-	<Carousel {images} />
+	<Carousel {content} />
 {/if}
