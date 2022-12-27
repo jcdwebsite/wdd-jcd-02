@@ -2,9 +2,7 @@
 	import { Input, Textarea, Button } from 'flowbite-svelte';
 </script>
 
-<form
-	class="py-10 px-3 sm:px-10 mt-20 flex flex-col items-center gap-3 sm:w-2/3 mx-auto shadow-2xl"
->
+<form class="py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 mx-auto shadow-2xl">
 	<div class="placeholder pb-6">
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
 		<div class="text-xl text-cyan-400 text-center">Fill out this form to get started.</div>
