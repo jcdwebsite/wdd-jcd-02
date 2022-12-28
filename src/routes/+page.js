@@ -6,11 +6,32 @@ export async function load({ fetch }) {
 	async function fetchBlogData() {
 		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=5');
 		const res = await req.json();
-		console.log(res[0].content);
+		// console.log(res[0].content);
 		return res[0];
 	}
 
+	// async function fetchPlanData() {
+	// 	const req = await fetch("");
+	// 	const res = await req.json();
+	// 	return res[0];
+	// }
+
+	// async function fetchDescriptionData() {
+	// 	const req = await fetch("");
+	// 	const res = await req.json();
+	// 	return res[0];
+	// }
+
+	// async function fetchProjectData() {
+	// 	const req = await fetch("");
+	// 	const res = await req.json();
+	// 	return res[0];
+	// }
+
 	return {
-		data: fetchBlogData()
+		blogData: fetchBlogData()
+		// planData: fetchPlanData(),
+		// descriptionData: fetchDescriptionData(),
+		// projectData: fetchProjectData(),
 	};
 }

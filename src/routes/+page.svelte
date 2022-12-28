@@ -1,4 +1,5 @@
 <script>
+	export let data;
 	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax';
 	import SecondSection from './homeSecondSection.svelte';
 	import FirstSection from './homeFirstSection.svelte';
@@ -9,6 +10,13 @@
 		const p = progress;
 		opacityRate = `opacity(${opacityValue * p}%)`;
 	};
+
+	console.log(data.blogData);
+
+	let { date, excerpt } = data.blogData;
+
+	console.log(date);
+	console.log(excerpt.rendered);
 </script>
 
 <Parallax config={{ stiffness: 1, damping: 2 }} threshold={{ top: 0, bottom: 0 }} sections={5}>
@@ -21,6 +29,7 @@
 		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-900" />
 	</StickyLayer>
 	<ParallaxLayer rate={1} offset={1}>
+		<div>{@html excerpt.rendered}</div>
 		<SecondSection />
 	</ParallaxLayer>
 </Parallax>

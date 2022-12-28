@@ -1,28 +1,15 @@
 <script>
-	import img1 from '$lib/images/IMG_0753.png';
+	export let data;
 	import Card from './blogCard.svelte';
 
+	let { excerpt, title, date, jetpack_featured_media_url } = data.blogData;
+	console.log(data.blogData);
 	let content = [
 		{
-			title: 'Placeholder',
-			src: img1,
-			body: 'This should be taken from a fetch request to the blog excerpt',
-			tag: 'Blog',
-			date: '12 Dec 2022'
-		},
-		{
-			title: 'Placeholder',
-			src: img1,
-			body: 'This should be taken from a fetch request to the blog excerpt',
-			tag: 'Blog',
-			date: '12 Dec 2022'
-		},
-		{
-			title: 'Placeholder',
-			src: img1,
-			body: 'This should be taken from a fetch request to the blog excerpt',
-			tag: 'Blog',
-			date: '12 Dec 2022'
+			body: excerpt.rendered,
+			title: title.rendered,
+			date,
+			src: jetpack_featured_media_url
 		}
 	];
 </script>
