@@ -8,7 +8,6 @@
 		let { excerpt, title, date, jetpack_featured_media_url, id } = element;
 		content.push({ excerpt, title, date, jetpack_featured_media_url, id });
 	});
-	console.log(content);
 </script>
 
 <Card {content} />

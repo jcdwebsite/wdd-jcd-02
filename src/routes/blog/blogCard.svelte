@@ -2,6 +2,12 @@
 	import { Card } from 'flowbite-svelte';
 
 	export let content;
+
+	const formatDate = (date) => {
+		let formattedDate;
+		formattedDate = new Date(date);
+		return formattedDate.toLocaleDateString();
+	};
 </script>
 
 {#each content as { title, excerpt, date, id, jetpack_featured_media_url }}
@@ -18,7 +24,7 @@
 					{title.rendered}
 				</a>
 			</h5>
-			<div class="text-md text-cyan-500">{date}</div>
+			<div class="text-md text-cyan-500">{formatDate(date)}</div>
 			<p class="text-md mb-3 font-normal text-cyan-300 dark:text-gray-400 leading-tight">
 				<a href={`blog/${id}`}>
 					{@html excerpt.rendered}
