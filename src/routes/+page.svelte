@@ -2,7 +2,7 @@
 	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax';
 	import SecondSection from './homeSecondSection.svelte';
 	import FirstSection from './homeFirstSection.svelte';
-
+	
 	let opacityValue = 150;
 	let opacityRate;
 	const blurBackground = (progress) => {
