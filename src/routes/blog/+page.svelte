@@ -5,8 +5,8 @@
 	let content = [];
 
 	data.blogData.forEach((element) => {
-		let { excerpt, title, date, jetpack_featured_media_url } = element;
-		content.push({ excerpt, title, date, jetpack_featured_media_url });
+		let { excerpt, title, date, jetpack_featured_media_url, id } = element;
+		content.push({ excerpt, title, date, jetpack_featured_media_url, id });
 	});
 	console.log(content);
 </script>
