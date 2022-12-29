@@ -2,16 +2,13 @@
 	export let data;
 	import Card from './blogCard.svelte';
 
-	let { excerpt, title, date, jetpack_featured_media_url } = data.blogData;
-	console.log(data.blogData);
-	let content = [
-		{
-			body: excerpt.rendered,
-			title: title.rendered,
-			date,
-			src: jetpack_featured_media_url
-		}
-	];
+	let content = [];
+
+	data.blogData.forEach((element) => {
+		let { excerpt, title, date, jetpack_featured_media_url } = element;
+		content.push({ excerpt, title, date, jetpack_featured_media_url });
+	});
+	console.log(content);
 </script>
 
 <Card {content} />
