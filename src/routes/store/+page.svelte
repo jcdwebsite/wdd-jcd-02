@@ -1,33 +1,17 @@
 <script>
+	export let data;
+
+	console.log(data.storeData);
+
 	import Card from './storeCard.svelte';
 	import Card1 from '$lib/components/card.svelte';
 	import Carousel from '../../lib/components/carousel.svelte';
-	import img1 from '$lib/images/IMG_0753.png';
 
-	let content = [
-		{
-			type: 'plan',
-			title: 'Placeholder',
-			src: img1,
-			body: 'This should be taken from a fetch request to the blog excerpt',
-			price: '$500'
-		},
-		{
-			type: 'plan',
-			title: 'Placeholder',
-			src: img1,
-			body: 'This should be taken from a fetch request to the blog excerpt',
-			price: '$500'
-		},
-		{
-			type: 'plan',
-			title: 'Placeholder',
-			src: img1,
-			body: 'This should be taken from a fetch request to the blog excerpt',
-			tag: 'Blog',
-			price: '$500'
-		}
-	];
+	let content = [];
+	data.storeData.forEach((element) => {
+		let { excerpt, title, jetpack_featured_media_url, id } = element;
+		content.push({ excerpt, title, jetpack_featured_media_url, id });
+	});
 
 	let screenWidth;
 </script>
