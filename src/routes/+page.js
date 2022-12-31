@@ -7,31 +7,31 @@ export async function load({ fetch }) {
 		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=6');
 		const res = await req.json();
 		// console.log(res[0].content);
-		return res[0];
+		return res;
+	}
+
+	async function fetchDescriptionData() {
+		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=5&tags=9');
+		const res = await req.json();
+		return res;
+	}
+
+	async function fetchProjectData() {
+		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=10');
+		const res = await req.json();
+		return res;
 	}
 
 	// async function fetchPlanData() {
 	// 	const req = await fetch("");
 	// 	const res = await req.json();
-	// 	return res[0];
-	// }
-
-	// async function fetchDescriptionData() {
-	// 	const req = await fetch("");
-	// 	const res = await req.json();
-	// 	return res[0];
-	// }
-
-	// async function fetchProjectData() {
-	// 	const req = await fetch("");
-	// 	const res = await req.json();
-	// 	return res[0];
+	// 	return res;
 	// }
 
 	return {
-		blogData: fetchBlogData()
+		blogData: fetchBlogData(),
+		descriptionData: fetchDescriptionData(),
+		projectData: fetchProjectData()
 		// planData: fetchPlanData(),
-		// descriptionData: fetchDescriptionData(),
-		// projectData: fetchProjectData(),
 	};
 }

@@ -7,9 +7,9 @@
 
 <!-- Top level cards, using flowbite -->
 <div class="bg-cyan-900 pb-40">
-	<BlogCards />
+	<!-- <BlogCards /> -->
 	<!-- Description of Cruz Designs -->
-	<div class="px-3 pt-20 sm:grid sm:grid-cols-6 text-left">
+	<!-- <div class="px-3 pt-20 sm:grid sm:grid-cols-6 text-left">
 		<div class="mb-4 col-span-2 text-lg text-orange-400 font-semibold underline underline-offset-8">
 			What is Cruz Designs?
 		</div>
@@ -18,9 +18,9 @@
 			as well as custom homes, feel free to contact me via this site or check out the store where
 			you can buy plans for your lot.
 		</div>
-	</div>
+	</div> -->
 	<!-- Big project cards -->
-	<ProjectShowcase />
+	<!-- <ProjectShowcase /> -->
 	<!-- Buy call to action -->
 	<PlanCards />
 	<!-- Contact form -->
