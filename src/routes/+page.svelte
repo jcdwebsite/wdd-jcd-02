@@ -54,17 +54,19 @@
 		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-900" />
 	</StickyLayer>
 	<ParallaxLayer rate={1} offset={1}>
-		{#if screenWidth > 700}
+		<div class="bg-cyan-900">
+
+			{#if screenWidth > 700}
 			<div class="px-3 flex gap-4 justify-center">
 				<Card content={blogContent} />
 			</div>
-		{:else}
+			{:else}
 			<Carousel content={blogContent} />
-		{/if}
-		<div class="px-3 pt-20 sm:grid sm:grid-cols-6 text-left">
-			<div
+			{/if}
+			<div class="px-3 pt-20 sm:grid sm:grid-cols-6 text-left">
+				<div
 				class="mb-4 col-span-2 text-lg text-orange-400 font-semibold underline underline-offset-8"
-			>
+				>
 				{title.rendered}
 			</div>
 			<div class="col-span-4 text-2xl sm:text-4xl text-cyan-300">
@@ -72,6 +74,7 @@
 			</div>
 		</div>
 		<ProjectShowcase content={projectContent} />
+	</div>
 		<SecondSection />
 	</ParallaxLayer>
 </Parallax>
