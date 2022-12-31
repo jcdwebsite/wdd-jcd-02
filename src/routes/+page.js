@@ -4,7 +4,9 @@ export async function load({ fetch }) {
 	// each +page.js in each route does the same
 	// can put multiple fetch calls in here as async functions
 	async function fetchBlogData() {
-		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=6');
+		const req = await fetch(
+			'https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=6&per_page=3'
+		);
 		const res = await req.json();
 		// console.log(res[0].content);
 		return res;
@@ -17,13 +19,16 @@ export async function load({ fetch }) {
 	}
 
 	async function fetchProjectData() {
-		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=10');
+		const req = await fetch(
+			'https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=10&per_page=3'
+		);
 		const res = await req.json();
 		return res;
 	}
 
+	// category here is not correct
 	// async function fetchPlanData() {
-	// 	const req = await fetch("");
+	// 	const req = await fetch("https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=10&per_page=3");
 	// 	const res = await req.json();
 	// 	return res;
 	// }
