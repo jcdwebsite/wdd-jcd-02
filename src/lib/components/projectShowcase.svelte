@@ -4,7 +4,8 @@
 	export let content;
 </script>
 
-{#each content as { title, excerpt, jetpack_featured_media_url }}
+{#each content as { title, excerpt, jetpack_featured_media_url }, index}
+{#if index % 2 === 0}
 	<div class="bg-cyan-900 block py-60 md:grid md:grid-cols-2">
 		<div class="my-3 md:col-span-1 imgContainer">
 			<!-- <a href={`work/${id}`}> -->
@@ -27,7 +28,7 @@
 			</a>
 		</div>
 	</div>
-
+{:else}
 	<div class="bg-cyan-900 block pb-60 md:grid md:grid-cols-2">
 		<div class="col-span-1 self-center text-left px-3 sm:ml-10 xl:w-1/2">
 			<div class="text-xl mb-2 lg:text-2xl text-cyan-600">{title.rendered}</div>
@@ -48,4 +49,5 @@
 			<img class="md:w-full" alt="work profile" src={jetpack_featured_media_url} />
 		</div>
 	</div>
+	{/if}
 {/each}
