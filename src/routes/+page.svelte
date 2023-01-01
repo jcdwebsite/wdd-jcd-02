@@ -5,12 +5,11 @@
 
 	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax';
 
-	import SecondSection from './homeSecondSection.svelte';
 	import FirstSection from './homeFirstSection.svelte';
-
 	import Card from '$lib/components/card.svelte';
 	import Carousel from '../lib/components/carousel.svelte';
 	import ProjectShowcase from '../lib/components/projectShowcase.svelte';
+	import ContactCard from '../lib/components/contactCard.svelte';
 
 	// This function creates the blur effect on the second stickylayer
 	let opacityValue = 150;
@@ -54,27 +53,26 @@
 		<div style="filter:{opacityRate}" class="w-full h-full bg-cyan-900" />
 	</StickyLayer>
 	<ParallaxLayer rate={1} offset={1}>
-		<div class="bg-cyan-900">
-
+		<div class="bg-cyan-900 sm:pb-40">
 			{#if screenWidth > 700}
-			<div class="px-3 flex gap-4 justify-center">
-				<Card content={blogContent} />
-			</div>
+				<div class="px-3 flex gap-4 justify-center">
+					<Card content={blogContent} />
+				</div>
 			{:else}
-			<Carousel content={blogContent} />
+				<Carousel content={blogContent} />
 			{/if}
 			<div class="px-3 pt-20 sm:grid sm:grid-cols-6 text-left">
 				<div
-				class="mb-4 col-span-2 text-lg text-orange-400 font-semibold underline underline-offset-8"
+					class="mb-4 col-span-2 text-lg text-orange-400 font-semibold underline underline-offset-8"
 				>
-				{title.rendered}
+					{title.rendered}
+				</div>
+				<div class="col-span-4 text-2xl sm:text-4xl text-cyan-300">
+					{@html content.rendered}
+				</div>
 			</div>
-			<div class="col-span-4 text-2xl sm:text-4xl text-cyan-300">
-				{@html content.rendered}
-			</div>
+			<ProjectShowcase content={projectContent} />
+			<ContactCard/>
 		</div>
-		<ProjectShowcase content={projectContent} />
-	</div>
-		<SecondSection />
 	</ParallaxLayer>
 </Parallax>

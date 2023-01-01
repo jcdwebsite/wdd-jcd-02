@@ -22,7 +22,7 @@
 	<!-- Big project cards -->
 	<!-- <ProjectShowcase /> -->
 	<!-- Buy call to action -->
-	<PlanCards />
+	<!-- <PlanCards /> -->
 	<!-- Contact form -->
 	<ContactCard />
 </div>
