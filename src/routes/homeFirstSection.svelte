@@ -10,7 +10,7 @@
 	onMount(() => (visible = true));
 </script>
 
-<div class="h-full w-screen bg-svg md:py-40">
+<div class="h-screen w-screen bg-svg ">
 	<!-- <div class=""> -->
 	{#if visible}
 		<img
