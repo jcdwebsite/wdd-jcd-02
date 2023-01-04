@@ -1,44 +1,39 @@
 <script>
-	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
-	// To Do:
-	// The svg will animate in with the logo, then the screen will slide
-	// needs to always fill the viewport
+	import { onMount } from 'svelte';
 	import logo from '$lib/graphics/logowithoutcircle.svg';
-
+	
 	let visible = false;
 	onMount(() => (visible = true));
 </script>
 
-<div class="h-screen w-screen bg-svg ">
-	<!-- <div class=""> -->
-	{#if visible}
+{#if visible}
+	<div class="h-screen w-screen bg-svg ">
 		<img
-			transition:fly={{ y: -400, duration: 4000 }}
-			class="scale-[0.3] sm:scale-50 lg:scale-100 mx-auto"
+			transition:fly|local={{ y: -400, duration: 4000 }}
 			src={logo}
+			class="scale-[0.3] sm:scale-50 lg:scale-100 mx-auto"
 			alt="Jose Cruz Designs logo"
 		/>
 		<h1
-			transition:fly={{ y: -400, duration: 3000 }}
+			transition:fly|local={{ y: -400, duration: 3000 }}
 			class="sm:mb-10 text-lg md:text-2xl text-bold text-center text-orange-400"
 		>
 			Cruz Designs
 		</h1>
 		<div class="flex justify-evenly sm:mb-10">
-			<h1 transition:fly={{ y: -400, duration: 2000 }} class="text-sm sm:text-xl text-cyan-500">
+			<h1 transition:fly|local={{ y: -400, duration: 2000 }} class="text-sm sm:text-xl text-cyan-500">
 				Chicago
 			</h1>
-			<h1 transition:fly={{ y: -400, duration: 1500 }} class="text-sm sm:text-xl text-cyan-500">
+			<h1 transition:fly|local={{ y: -400, duration: 1500 }} class="text-sm sm:text-xl text-cyan-500">
 				Southern California
 			</h1>
-			<h1 transition:fly={{ y: -400, duration: 1000 }} class="text-sm sm:text-xl text-cyan-500">
+			<h1 transition:fly|local={{ y: -400, duration: 1000 }} class="text-sm sm:text-xl text-cyan-500">
 				Bay Area
 			</h1>
 		</div>
-	{/if}
-	<!-- </div> -->
-</div>
+	</div>
+{/if}
 
 <style>
 	.bg-svg {
