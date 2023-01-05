@@ -3,7 +3,7 @@
 </script>
 
 <form
-	class="absolute left-0 right-0 top-60 bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 mx-auto custom-shadow"
+	class=" bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 mx-auto custom-shadow"
 >
 	<div class="placeholder pb-6">
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
