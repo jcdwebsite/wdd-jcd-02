@@ -11,7 +11,7 @@
 	});
 </script>
 
-<Card padding="none" size="xl" class="grid md:grid-cols-2 mx-auto">
+<Card padding="none" size="xl" class="grid md:grid-cols-2 xl:grid-cols-3 mx-auto">
 	{#each media as { title, guid }}
 		<figure
 			class="flex flex-col justify-center items-center p-8 text-center bg-white rounded-t-lg border-b border-gray-200 md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
