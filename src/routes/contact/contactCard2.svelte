@@ -3,7 +3,7 @@
 </script>
 
 <form
-	class="py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 mx-auto shadow-2xl"
+	class="absolute left-0 right-0 top-60 bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 mx-auto custom-shadow"
 >
 	<div class="placeholder pb-6">
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
@@ -43,8 +43,14 @@
 	/>
 	<button
 		method="post"
-		class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
+		class="text-xl font-bold text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
 	>
 		Send
 	</button>
 </form>
+
+<style>
+	.custom-shadow {
+		box-shadow: 0px 15px 150px 20px rgb(0, 0, 0);
+	}
+</style>
