@@ -4,9 +4,7 @@ export async function load({ fetch }) {
 	// each +page.js in each route does the same
 	// can put multiple fetch calls in here as async functions
 	async function fetchGalleryData() {
-		const req = await fetch(
-			'https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=6&per_page=3'
-		);
+		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/media');
 		const res = await req.json();
 		// console.log(res[0].content);
 		return res;
