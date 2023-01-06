@@ -65,6 +65,7 @@
 		method="POST"
 		netlify-honeypot="nbot-field"
 		data-netlify="true"
+		action="/success"
 	>
 		<input type="hidden" name="form-name" value="contact-test" />
 		<input
