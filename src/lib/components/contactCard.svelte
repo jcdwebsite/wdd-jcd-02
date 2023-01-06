@@ -10,8 +10,9 @@
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
 		<div class="text-xl text-cyan-400 text-center">Fill out this form to get started.</div>
 	</div>
-	<Input name="name" type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
+	<Input required name="name" type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
 	<Input
+		required
 		name="address"
 		type="text"
 		placeholder="Project Address"
@@ -19,6 +20,7 @@
 		class="bg-white hover:border-orange-500"
 	/>
 	<Input
+		required
 		name="email"
 		type="email"
 		placeholder="email@example.com"
