@@ -3,20 +3,23 @@
 </script>
 
 <form
-	class="py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 mx-auto shadow-2xl"
+	name="contact" method="POST" data-netlify="true" netlify-honeypot="nbot-field"
+	class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto shadow-2xl"
 >
 	<div class="placeholder pb-6">
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
 		<div class="text-xl text-cyan-400 text-center">Fill out this form to get started.</div>
 	</div>
-	<Input type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
+	<Input name="name" type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
 	<Input
+		name="address"
 		type="text"
 		placeholder="Project Address"
 		size="md"
 		class="bg-white hover:border-orange-500"
 	/>
 	<Input
+		name="email"
 		type="email"
 		placeholder="email@example.com"
 		size="md"
