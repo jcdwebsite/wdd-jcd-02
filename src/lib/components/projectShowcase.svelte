@@ -14,7 +14,7 @@
 					<Img src={jetpack_featured_media_url} alt={title.rendered} />
 				</a>
 			</div>
-			<div class="md:col-span-1 self-center text-left px-3 py-3  sm:ml-10 ">
+			<div class="md:col-span-1 self-center text-left px-3 py-3 sm:px-[9%] xl:px-[20%] sm:ml-10 ">
 				<div class="text-xl mb-2 lg:text-2xl text-cyan-600">{@html title.rendered}</div>
 				<div class="text-cyan-400 text-2xl mb-2 lg:text-3xl lg:mb-5">
 					This project was unique because of these reasons:
@@ -32,7 +32,7 @@
 		</div>
 	{:else}
 		<div class="bg-cyan-900 block pb-60 md:grid md:grid-cols-2 sm:gap-10">
-			<div class="md:col-span-1 self-center text-left px-3 py-3 sm:ml-10">
+			<div class="md:col-span-1 self-center text-left px-3 py-3 sm:px-[9%] xl:px-[20%] sm:ml-10">
 				<div class="text-xl mb-2 lg:text-2xl text-cyan-600">{title.rendered}</div>
 				<div class="text-cyan-400 text-2xl mb-2 lg:text-3xl lg:mb-5">
 					This project was unique because of these reasons:
