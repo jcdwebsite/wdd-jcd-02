@@ -53,6 +53,7 @@
 	</StickyLayer>
 	<ParallaxLayer rate={1} offset={1}>
 		<div class="bg-cyan-900 sm:pb-40">
+			<!-- Blog Card Section -->
 			{#if screenWidth > 700}
 				<div class="px-3 flex gap-4 justify-center">
 					<Card content={blogContent} />
@@ -60,11 +61,15 @@
 			{:else}
 				<Carousel content={blogContent} />
 			{/if}
-			<div class="px-3 pt-20 sm:grid sm:grid-cols-6 text-left">
-				<div
-					class="mb-4 col-span-2 text-lg text-orange-400 font-semibold underline underline-offset-8"
-				>
-					{title.rendered}
+			<!-- Description section -->
+			<div class="px-3 sm:px-[9%] xl:px-[20%] pt-20 sm:grid sm:grid-cols-6 text-left">
+				<div class="mb-4 col-span-2 text-lg text-orange-400 font-semibold">
+					<a
+						href="/about"
+						class=" underline underline-offset-8 hover:underline-offset-1 cursor-pointer"
+					>
+						{title.rendered}
+					</a>
 				</div>
 				<div class="col-span-4 text-2xl sm:text-4xl text-cyan-300">
 					{@html content.rendered}

@@ -13,13 +13,13 @@
 
 		<div class="flex justify-evenly">
 			<div
-				class="text-xl text-orange-500 underline underline-offset-8 hover:underline-offset-1 cursor-pointer"
+				class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-1 cursor-pointer"
 			>
 				<a href="/blog"> Check out my Blog </a>
 			</div>
 			<div class="text-xl text-cyan-300">OR</div>
 			<div
-				class="text-xl text-orange-500 underline underline-offset-8 hover:underline-offset-1 cursor-pointer"
+				class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-1 cursor-pointer"
 			>
 				<a href="/store"> Check out the Store </a>
 			</div>
