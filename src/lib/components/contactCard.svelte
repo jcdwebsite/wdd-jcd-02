@@ -43,7 +43,7 @@
 		type="text"
 		required
 		class="bg-white hover:border-orange-500"
-		id="email textarea-id"
+		id="textarea-id"
 		placeholder="Your scope of work, lot size, if you are working with a contractor, etc..."
 		rows="5"
 		name="message"
