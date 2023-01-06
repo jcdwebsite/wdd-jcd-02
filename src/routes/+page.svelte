@@ -1,7 +1,6 @@
 <script>
 	// This data var holds the data that was fetched in the +page.js file
 	export let data;
-	// console.log(data.blogData);
 
 	import { Parallax, ParallaxLayer, StickyLayer } from 'svelte-parallax';
 
