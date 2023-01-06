@@ -46,11 +46,10 @@
 		rows="5"
 		name="message"
 	/>
-	<button
-		value="Submit"
+	<input
+		type="submit"
+		value="Send"
 		method="post"
 		class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
-	>
-		Send
-	</button>
+	/>
 </form>
