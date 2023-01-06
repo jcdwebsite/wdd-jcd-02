@@ -1,5 +1,7 @@
-<script>
+<script context="module">
 	import { Input, Textarea } from 'flowbite-svelte';
+
+	export const prerender = true;
 </script>
 
 <form

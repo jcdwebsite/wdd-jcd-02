@@ -1,6 +1,4 @@
 /** @type {import('./$types').PageLoad} */
-export const prerender = true;
-
 export async function load({ fetch }) {
 	// This load function runs on the home page and loads relevant content,
 	// each +page.js in each route does the same
