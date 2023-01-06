@@ -37,8 +37,8 @@
 	let projectContent = [];
 
 	data.projectData.forEach((element) => {
-		let { title, excerpt, jetpack_featured_media_url } = element;
-		projectContent.push({ title, excerpt, jetpack_featured_media_url });
+		let { title, excerpt, jetpack_featured_media_url, id } = element;
+		projectContent.push({ title, excerpt, jetpack_featured_media_url, id });
 	});
 </script>
 
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 			<ProjectShowcase content={projectContent} />
-			<ContactCard/>
+			<ContactCard />
 		</div>
 	</ParallaxLayer>
 </Parallax>
