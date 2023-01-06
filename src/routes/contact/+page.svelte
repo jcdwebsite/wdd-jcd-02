@@ -60,11 +60,12 @@
 		</form>
 	</div> -->
 	<form
-		class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto shadow-2xl"		
+		class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto custom-shadow"		
 		name="contact test"
 		method="POST"
 		netlify-honeypot="nbot-field"
 		data-netlify="true"
+		action="/success"
 	>
 		<input type="hidden" name="form-name" value="contact-test" />
 		<input
