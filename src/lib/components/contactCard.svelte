@@ -4,7 +4,7 @@
 	export const prerender = true;
 </script>
 
-<form
+<!-- <form
 	name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
 	class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto shadow-2xl"
 >
@@ -30,7 +30,7 @@
 		size="md"
 		class="bg-white hover:border-orange-500"
 	/>
-		<!-- <svg
+		<svg
 			slot="left"
 			aria-hidden="true"
 			class="w-6 h-6"
@@ -41,7 +41,7 @@
 				d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
 			/></svg
 		>
-	</Input> -->
+	</Input>
 	<textarea
 		type="text"
 		required
@@ -57,4 +57,25 @@
 		method="post"
 		class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
 	/>
-</form>
+</form> -->
+
+
+<form
+		class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto shadow-2xl"		
+		name="contact test"
+		method="POST"
+		netlify-honeypot="nbot-field"
+		data-netlify="true"
+	>
+		<input type="hidden" name="form-name" value="email" />
+		<input
+			name="email"
+			id="email"
+			class="input"
+			type="text"
+			required
+			placeholder="example@gmail.com"
+		/>
+		<p class="help " />
+		<input type="submit" class="button mt-1" value="Submit" />
+	</form>
