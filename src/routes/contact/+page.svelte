@@ -5,10 +5,10 @@
 	import pic from '$lib/images/TrussFinish06.jpg';
 </script>
 
-<div class="bg-cyan-900 w-screen h-screen">
-	<div class="flex flex-col justify-center items-center py-40">
+<div class="bg-cyan-900 bg-svg ">
+	<div class="flex flex-col sm:items-center py-40">
 		<form
-			class=" bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 mx-auto custom-shadow"
+			class=" bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 custom-shadow"
 		>
 			<div class="placeholder pb-6">
 				<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
@@ -62,6 +62,13 @@
 </div>
 
 <style>
+	.bg-svg {
+		background-image: url('$lib/graphics/skylineOutline.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
 	.custom-shadow {
 		box-shadow: 0px 15px 150px 20px rgb(0, 0, 0);
 	}
