@@ -3,13 +3,14 @@
 </script>
 
 <form
-	name="contact" method="POST" data-netlify="true" netlify-honeypot="nbot-field"
+	name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
 	class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto shadow-2xl"
 >
 	<div class="placeholder pb-6">
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
 		<div class="text-xl text-cyan-400 text-center">Fill out this form to get started.</div>
 	</div>
+	<input type="hidden" name="contact" value="email" />
 	<Input required name="name" type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
 	<Input
 		required
