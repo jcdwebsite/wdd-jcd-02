@@ -6,7 +6,7 @@
 </script>
 
 <div class="bg-cyan-900 bg-svg ">
-	<div class="flex flex-col sm:items-center py-40">
+	<!-- <div class="flex flex-col sm:items-center py-40">
 		<form
 			class=" bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-2/6 custom-shadow"
 		>
@@ -58,7 +58,26 @@
 				Send
 			</button>
 		</form>
-	</div>
+	</div> -->
+	<form
+		class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto shadow-2xl"		
+		name="contact test"
+		method="POST"
+		netlify-honeypot="nbot-field"
+		data-netlify="true"
+	>
+		<input type="hidden" name="form-name" value="contact-test" />
+		<input
+			name="email"
+			id="email"
+			class="input"
+			type="text"
+			required
+			placeholder="example@gmail.com"
+		/>
+		<p class="help " />
+		<input type="submit" class="button mt-1" value="Submit" />
+</form>
 </div>
 
 <style>

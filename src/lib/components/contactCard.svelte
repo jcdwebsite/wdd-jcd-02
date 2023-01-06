@@ -66,7 +66,7 @@
 		netlify-honeypot="nbot-field"
 		data-netlify="true"
 	>
-		<input type="hidden" name="form-name" value="email" />
+		<input type="hidden" name="form-name" value="contact-test" />
 		<input
 			name="email"
 			id="email"
@@ -77,4 +77,4 @@
 		/>
 		<p class="help " />
 		<input type="submit" class="button mt-1" value="Submit" />
-	</form>
+</form>
