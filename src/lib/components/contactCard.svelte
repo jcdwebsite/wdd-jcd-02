@@ -38,13 +38,16 @@
 		>
 	</Input>
 	<Textarea
+		type="text"
+		required
 		class="bg-white hover:border-orange-500"
-		id="textarea-id"
+		id="email textarea-id"
 		placeholder="Your scope of work, lot size, if you are working with a contractor, etc..."
 		rows="5"
 		name="message"
 	/>
 	<button
+		value="Submit"
 		method="post"
 		class="text-xl text-orange-400 underline underline-offset-8 hover:underline-offset-2 cursor-pointer"
 	>
