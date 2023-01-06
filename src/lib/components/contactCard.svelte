@@ -10,9 +10,9 @@
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
 		<div class="text-xl text-cyan-400 text-center">Fill out this form to get started.</div>
 	</div>
-	<input type="hidden" name="contact" value="email" />
-	<Input required name="name" type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
-	<Input
+	<input type="hidden" name="contact" value="contact" />
+	<input required name="name" type="text" placeholder="Full Name" size="md" class="bg-white hover:border-orange-500" />
+	<input
 		required
 		name="address"
 		type="text"
@@ -20,15 +20,15 @@
 		size="md"
 		class="bg-white hover:border-orange-500"
 	/>
-	<Input
+	<input
 		required
 		name="email"
 		type="email"
 		placeholder="email@example.com"
 		size="md"
 		class="bg-white hover:border-orange-500"
-	>
-		<svg
+	/>
+		<!-- <svg
 			slot="left"
 			aria-hidden="true"
 			class="w-6 h-6"
@@ -39,7 +39,7 @@
 				d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
 			/></svg
 		>
-	</Input>
+	</Input> -->
 	<Textarea
 		type="text"
 		required
