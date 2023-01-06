@@ -40,7 +40,7 @@
 			/></svg
 		>
 	</Input> -->
-	<Textarea
+	<textarea
 		type="text"
 		required
 		class="bg-white hover:border-orange-500"
