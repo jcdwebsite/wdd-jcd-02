@@ -9,6 +9,14 @@
 		<input type="hidden" name="form-name" value="netlify-form-example" />
 		<input name="name" id="name" required placeholder="Name" type="text" />
 		<input name="email" id="email" required placeholder="Email" type="email" />
+		<input
+			name="address"
+			id="address"
+			required
+			type="text"
+			placeholder="Project Address"
+			class="bg-white hover:border-orange-500"
+		/>
 		<input name="message" id="message" required placeholder="Message" type="text" />
 		<input type="submit" value="Submit" />
 	</form>
@@ -28,14 +36,7 @@
 			placeholder="Full Name"
 			class="bg-white hover:border-orange-500"
 		/>
-		<input
-			name="address"
-			id="address"
-			required
-			type="text"
-			placeholder="Project Address"
-			class="bg-white hover:border-orange-500"
-		/>
+		
 		<input
 			name="email"
 			id="email"
