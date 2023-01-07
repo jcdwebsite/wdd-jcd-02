@@ -38,8 +38,8 @@
 			class="bg-cyan-900 hover:border-orange-500 hover:placeholder:text-orange-400 border-cyan-300 placeholder:text-cyan-500 text-orange-400"
 		/>
 		<textarea
-			name="message"
-			id="message"
+			name="details"
+			id="details"
 			required
 			type="text"
 			placeholder="Your scope of work, lot size, if you are working with a contractor, etc..."
