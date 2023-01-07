@@ -6,7 +6,7 @@
 	<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
 	<div class="text-xl text-cyan-400 text-center">Fill out this form to get started.</div>
 	<form name="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-		<input type="hidden" name="form-name" value="netlify-form-example" />
+		<input type="hidden" name="form-name" value="contact" />
 		<input name="name" id="name" required placeholder="Name" type="text" />
 		<input name="email" id="email" required placeholder="Email" type="email" />
 		<input
