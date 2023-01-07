@@ -1,3 +1,6 @@
+// So that the contact form works
+export const prerender = true;
+
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
 	// This load function runs on the home page and loads relevant content,
