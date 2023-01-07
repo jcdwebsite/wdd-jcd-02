@@ -9,7 +9,7 @@
 	<div class="mb-3">
 		<a
 			href="/blog"
-			class="text-md text-cyan-500 underline underline-offset-4 hover:underline-offset-1">Back</a
+			class="text-lg text-orange-400 underline underline-offset-4 hover:underline-offset-1">Back</a
 		>
 	</div>
 	<div class="mb-2 text-2xl font-bold tracking-tight text-cyan-300 dark:text-white">
