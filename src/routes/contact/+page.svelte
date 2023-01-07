@@ -15,8 +15,4 @@
 		background-position: center;
 		background-size: 200%;
 	}
-
-	.custom-shadow {
-		box-shadow: 0px 15px 150px 20px rgb(0, 0, 0);
-	}
 </style>
