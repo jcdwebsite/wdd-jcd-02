@@ -1,5 +1,4 @@
 <script>
-	import { Input, Textarea } from 'flowbite-svelte';
 	import ContactCard from '../../lib/components/contactCard.svelte';
 </script>
 
@@ -14,7 +13,7 @@
 		background-image: url('$lib/graphics/skylineOutline.svg');
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: contain;
+		background-size: 200%;
 	}
 
 	.custom-shadow {
