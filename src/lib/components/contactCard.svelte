@@ -1,6 +1,7 @@
-<script>
+<script context="module">
 	import { Input, Textarea } from 'flowbite-svelte';
-	
+
+	export const prerender = true;
 </script>
 
 <!-- <form
@@ -58,24 +59,13 @@
 	/>
 </form> -->
 
-
-<form
-		class="bg-cyan-900 py-10 px-3 sm:px-10 flex flex-col items-center gap-3 sm:w-2/3 xl:w-1/2 mx-auto shadow-2xl"		
-		name="contact test"
-		method="POST"
-		netlify-honeypot="nbot-field"
-		data-netlify="true"
-		action="/success"
-	>
-		<input type="hidden" name="form-name" value="contact-test" />
-		<input
-			name="email"
-			id="email"
-			class="input"
-			type="text"
-			required
-			placeholder="example@gmail.com"
-		/>
-		<p class="help " />
-		<input type="submit" class="button mt-1" value="Submit" />
+<form name="netlify-form-example" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+	<input type="hidden" name="form-name" value="netlify-form-example" />
+	<label for="name">Name</label>
+	<input name="name" id="name" required placeholder="Name" type="text" />
+	<label for="email">Email</label>
+	<input name="email" id="email" required placeholder="Email" type="email" />
+	<label for="message">Message</label>
+	<input name="message" id="message" required placeholder="Message" type="text" />
+	<input type="submit" value="Submit" />
 </form>
