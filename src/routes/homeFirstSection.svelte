@@ -2,7 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import logo from '$lib/graphics/logowithoutcircle.svg';
-	
+
 	let visible = false;
 	onMount(() => (visible = true));
 </script>
@@ -22,13 +22,22 @@
 			Cruz Designs
 		</h1>
 		<div class="flex justify-evenly sm:mb-10">
-			<h1 transition:fly|local={{ y: -400, duration: 2000 }} class="text-sm sm:text-xl text-cyan-500">
+			<h1
+				transition:fly|local={{ y: -400, duration: 2000 }}
+				class="text-sm sm:text-xl text-cyan-500"
+			>
 				Chicago
 			</h1>
-			<h1 transition:fly|local={{ y: -400, duration: 1500 }} class="text-sm sm:text-xl text-cyan-500">
+			<h1
+				transition:fly|local={{ y: -400, duration: 1500 }}
+				class="text-sm sm:text-xl text-cyan-500"
+			>
 				Southern California
 			</h1>
-			<h1 transition:fly|local={{ y: -400, duration: 1000 }} class="text-sm sm:text-xl text-cyan-500">
+			<h1
+				transition:fly|local={{ y: -400, duration: 1000 }}
+				class="text-sm sm:text-xl text-cyan-500"
+			>
 				Bay Area
 			</h1>
 		</div>
@@ -42,40 +51,16 @@
 		background-repeat: no-repeat;
 		background-position-y: bottom;
 	}
-	/* .centered {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	} */
 
-	/* .centered-above {
-		position: absolute;
-		left: 50%;
-		top: 60%;
-		transform: translate(-50%, -50%);
-	}
-
-	.centered-below {
-		gap: 2rem;
-		position: absolute;
-		left: 50%;
-		top: 65%;
-		transform: translate(-50%, -50%);
-	} */
-	/* .custom {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-
-	.path {
+	/* Commented out section was the svg animation, need to find a better way to use this similar to the animations above */
+	/* .path {
 		stroke-dasharray: 1;
 		stroke-dashoffset: 1;
 		animation: dash 5s linear alternate infinite;
 		animation: dash 5s linear alternate forwards;
 		transform: scale(0.6);
-	} */
-
+	}  */
+	/* 
 	@keyframes background-image {
 		from {
 			stroke-dashoffset: 1;
@@ -83,5 +68,5 @@
 		to {
 			stroke-dashoffset: 0;
 		}
-	}
+	} */
 </style>

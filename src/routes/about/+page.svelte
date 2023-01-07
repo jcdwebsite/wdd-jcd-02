@@ -23,6 +23,4 @@
 			<a href="/store"> Check out the Store </a>
 		</div>
 	</div>
-
-	<!-- <div class=" text-sm text-cyan-300">This website was built by jbcg.com</div> -->
 </div>

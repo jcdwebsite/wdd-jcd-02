@@ -6,7 +6,6 @@ export async function load({ fetch }) {
 	async function fetchAboutData() {
 		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=11');
 		const res = await req.json();
-		// console.log(res[0].content);
 		return res;
 	}
 

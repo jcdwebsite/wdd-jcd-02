@@ -10,12 +10,8 @@
 	};
 </script>
 
-<!-- the commented out section needs to become its own store card component -->
-
 {#each content as { excerpt, title, date, jetpack_featured_media_url, id }}
 	<Card img={jetpack_featured_media_url} color={'none'} border={false}>
-		<!-- <div class="shadow-xl rounded-lg bg-cyan-900"> -->
-		<!-- <img src={jetpack_featured_media_url} alt={title} class="rounded-t-lg  "/> -->
 		<div class="p-3">
 			<h5 class="my-1 text-md font-bold tracking-tight text-cyan-500">Blog</h5>
 			<a href={`blog/${id}`}>
@@ -30,6 +26,5 @@
 				</p>
 			</a>
 		</div>
-		<!-- </div> -->
 	</Card>
 {/each}

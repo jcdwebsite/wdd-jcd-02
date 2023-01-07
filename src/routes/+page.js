@@ -11,7 +11,6 @@ export async function load({ fetch }) {
 			'https://josecruzdesigns.net/wp-json/wp/v2/posts?categories=6&per_page=3'
 		);
 		const res = await req.json();
-		// console.log(res[0].content);
 		return res;
 	}
 

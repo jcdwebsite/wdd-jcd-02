@@ -6,7 +6,6 @@ export async function load({ fetch }) {
 	async function fetchGalleryData() {
 		const req = await fetch('https://josecruzdesigns.net/wp-json/wp/v2/media');
 		const res = await req.json();
-		// console.log(res[0].content);
 		return res;
 	}
 

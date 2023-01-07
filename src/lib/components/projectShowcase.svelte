@@ -1,5 +1,4 @@
 <script>
-	// import img2 from '$lib/images/TrussFinish01.jpg';
 	import { Img } from 'flowbite-svelte';
 
 	export let content;
@@ -10,7 +9,6 @@
 		<div class="bg-cyan-900 block py-60 md:grid md:grid-cols-2 sm:gap-10">
 			<div class="md:col-span-1 imgContainer">
 				<a href={`work/${id}`}>
-					<!-- <img class="md:h-full md:w-auto" alt="work profile" src={jetpack_featured_media_url} /> -->
 					<Img src={jetpack_featured_media_url} alt={title.rendered} />
 				</a>
 			</div>
@@ -49,7 +47,6 @@
 			</div>
 			<div class="md:col-span-1">
 				<a href={`work/${id}`}>
-					<!-- <img class="md:h-full md:w-auto" alt="work profile" src={jetpack_featured_media_url} /> -->
 					<Img src={jetpack_featured_media_url} alt={title.rendered} />
 				</a>
 			</div>

@@ -1,5 +1,5 @@
 <div
-	class="mx-auto bg-cyan-900 w-full sm:w-3/4 xl:w-2/6 px-3 py-5 sm:p-6 border rounded-md border-orange-500 custom-shadow"
+	class="mx-auto bg-cyan-900 w-full sm:w-3/4 xl:w-2/6 px-3 py-5 sm:p-6 border rounded-md border-orange-500 shadow-2xl hover:shadow-none"
 >
 	<div class="flex flex-col gap-1 pb-4">
 		<div class="text-2xl text-cyan-400 text-center">Want to work together?</div>
@@ -53,12 +53,3 @@
 		/>
 	</form>
 </div>
-
-<style>
-	.custom-shadow {
-		box-shadow: 0px 15px 100px rgb(0, 0, 0);
-	}
-	.custom-shadow:hover {
-		box-shadow: none;
-	}
-</style>
